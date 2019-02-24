@@ -13,11 +13,12 @@ import java.util.ArrayList;
  */
 class MeetingRoom extends Room {
 
-    public MeetingRoom(String name, String location, int size, ArrayList<Reservation> list) {
+    public MeetingRoom(String name, String location, int size, Equipment equipment) {
         this.name = name;
         this.location = location;
         this.size = size;
-        this.reservations = list;
+        this.equipment = equipment;
+        
     }
     
 }

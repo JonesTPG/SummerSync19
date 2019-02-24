@@ -35,8 +35,7 @@ class ReservationEngine implements ReservationAPI{
        return instance;
    }
 
-    //creates a new operation that will try to reserve the room as the Reservation
-    //object wants to   
+    //creates a new operation that will try to reserve the room.
     public boolean newReservationOperation(Reservation reservation) {
         this.operationId++;
         long operationId = this.operationId;
@@ -89,10 +88,8 @@ class ReservationEngine implements ReservationAPI{
     public boolean checkAvailability(Reservation reservation) {
         ArrayList<Reservation> a = this.allReservations;
         
-        boolean result = AvailabilityChecker.checkAvailability(reservation, a);
-        
-        return result;
-        
+        return AvailabilityChecker.checkAvailability(reservation, a);
+    
     }
 
     @Override

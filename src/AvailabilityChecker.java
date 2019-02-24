@@ -105,7 +105,7 @@ public class AvailabilityChecker {
         }
         
         if (filtered.isEmpty()) {
-            System.out.println("Looks like there is other previous reservations for the room"
+            System.out.println("Looks like there is no other previous reservations for the room"
                     + " at the given day.");
         }
         return filtered;

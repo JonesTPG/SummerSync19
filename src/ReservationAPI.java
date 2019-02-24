@@ -8,6 +8,8 @@
  *
  * @author joonas
  */
+
+//simple API to explain how the reservations should be handled.
 public interface ReservationAPI {
     
     boolean validateReservation(Reservation reservation);

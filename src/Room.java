@@ -16,10 +16,14 @@ abstract class Room {
     protected String name;
     protected String location;
     protected int size;
-    protected ArrayList<Reservation> reservations;
+    protected Equipment equipment;
+    
 
     public String showInformation() {
         return "Information";
     }
+
+   
+    
     
 }
